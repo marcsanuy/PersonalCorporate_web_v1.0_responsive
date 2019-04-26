@@ -1,10 +1,11 @@
 body {
-    background: rgb(180, 179, 179);
+    background: rgb(211, 211, 211);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    
+
 }
-.logo{
+
+.logo {
     float: left;
     position: relative;
     margin-left: 50px;
@@ -17,13 +18,13 @@ body {
     margin: auto;
     padding-top: 2%;
 }
-  
+
 
 header {
     height: 100vh;
     background: linear-gradient(rgba(56, 55, 55, 0.986), rgba(73, 113, 153, 0.644)), url(images/445785133a769a6.jpg) right no-repeat;
     background-size: cover;
-    
+
 }
 
 #contenedor-menu {
@@ -34,7 +35,7 @@ header {
 header .logo {
     color: white;
     font-size: 31px;
-    
+
 }
 
 nav ul {
@@ -58,7 +59,7 @@ nav ul li {
 }
 
 .contenedor-titulo h1 {
-    font-size: 60px;
+    font-size: 65px;
     color: white;
 }
 
@@ -84,7 +85,7 @@ nav ul li {
 
 #about h3 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 #about img {
@@ -115,7 +116,7 @@ nav ul li {
 
 #servicios h3 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .contenedor-servicios .color1 {
@@ -157,7 +158,7 @@ nav ul li {
     float: right;
 }
 
-.contenedor-servicios h4  {
+.contenedor-servicios h4 {
     text-align: center;
 }
 
@@ -175,36 +176,94 @@ nav ul li {
 
 }
 
-#trabajos h3{
-    font-size: 55px;
+#trabajos h3 {
+    font-size: 50px;
     text-align: center;
 }
+
 #trabajos img {
     transform: scale(1);
     transition: .4s;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 #trabajos img:hover {
     transform: scale(0.9);
     transition: .4s
 }
 
-#trabajos p{
-    text-align: center; 
+#trabajos p {
+    text-align: center;
     color: black;
     font-weight: bolder;
 }
-#trabajos a{
-    text-decoration:none;
+
+#trabajos a {
+    text-decoration: none;
 }
-.owl-nav button{
+
+.owl-nav button {
     color: rgb(63, 62, 62) !important;
     margin: 0 50px !important;
     font-size: 60px !important;
 }
+
 .owl-dots {
     display: none;
 }
-.owl-nav button:hover{
+
+.owl-nav button:hover {
     background: none !important;
+}
+
+
+#trabajar-conmigo h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#trabajar-conmigo .contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.item.i {
+    display: flex;
+}
+
+#trabajar-conmigo .item {
+    width: 30%;
+    text-align: center;
+    background-image: linear-gradient(to top, #4a4b72, #7777ad);
+    box-shadow: 3px 3px 17px -4px rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+
+#trabajar-conmigo ul li {
+    list-style: none;
+
+}
+
+#trabajar-conmigo ul li:nth-child(1) {
+    margin-right: 25px;
+
+}
+
+#trabajar-conmigo ul li:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+
+
+}
+
+#trabajar-conmigo ul li:nth-child(3) {
+    line-height: 30px;
+    margin-right: 25px;
+    margin-left: -10px;
 }
