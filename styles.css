@@ -24,6 +24,7 @@ header {
     height: 100vh;
     background: linear-gradient(rgba(56, 55, 55, 0.986), rgba(73, 113, 153, 0.644)), url(images/445785133a769a6.jpg) right no-repeat;
     background-size: cover;
+    
 
 }
 
@@ -125,7 +126,7 @@ nav ul li {
 }
 
 .contenedor-servicios .color2 {
-    background-image: linear-gradient(to top, rgb(77, 75, 75), rgb(73, 113, 153));
+    background-image: linear-gradient(rgb(77, 75, 75), rgb(73, 113, 153));
 
 }
 
@@ -266,4 +267,31 @@ nav ul li {
     line-height: 30px;
     margin-right: 25px;
     margin-left: -10px;
+}
+
+#cta {
+    background: linear-gradient(rgb(56, 55, 55), rgba(73, 113, 153, 0.712)), url(images/2017-05-31-11-00-19-900x598.jpg) right no-repeat;
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+    margin-top: 5%;
+    padding: 30px 0;
+}
+
+#cta h3 {
+    font-size: 25px;
+    color: white;
+}
+
+#cta a {
+    border-radius: 10px;
+    background: rgb(52, 161, 250);
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    width: 160px;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 0;
+    letter-spacing: .8px;
 }
