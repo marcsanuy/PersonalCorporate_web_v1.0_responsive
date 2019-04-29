@@ -2,6 +2,7 @@ body {
     background: rgb(211, 211, 211);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    margin: 0;
 
 }
 
@@ -134,7 +135,8 @@ nav ul li {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    color: white;
+    color: white ;
+    
 }
 
 .contenedor-servicios .servicio {
@@ -227,38 +229,47 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
 }
 
 .item.i {
     display: flex;
+    
+    
 }
 
 #trabajar-conmigo .item {
     width: 30%;
     text-align: center;
-    background-image: linear-gradient(to top, #4a4b72, #7777ad);
+    background: linear-gradient(rgba(39, 39, 39, 0.877), rgba(70, 103, 136, 0.925)), url("images/processor-2217771_960_720.jpg");
     box-shadow: 3px 3px 17px -4px rgb(0, 0, 0);
     border-radius: 10px;
+    
 
 }
 
 #trabajar-conmigo ul li {
     list-style: none;
+    text-decoration: none;
 
 }
 
 #trabajar-conmigo ul li:nth-child(1) {
     margin-right: 25px;
+    color: rgba(255, 255, 255, 0.767);
 
 }
 
 #trabajar-conmigo ul li:nth-child(2) {
+    color: rgba(255, 255, 255, 0.767);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 25px;
+    
+    
 
 
 }
@@ -267,6 +278,7 @@ nav ul li {
     line-height: 30px;
     margin-right: 25px;
     margin-left: -10px;
+    color: rgba(255, 255, 255, 0.767);
 }
 
 #cta {
@@ -294,4 +306,86 @@ nav ul li {
     display: inline-block;
     padding: 10px 0;
     letter-spacing: .8px;
+}
+
+#contacto h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#contacto .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    background: rgb(211, 211, 211);
+}
+
+textarea {
+    padding: 20px 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    color: #212121;
+    width: 100%;
+    margin-bottom: 30px;
+    background: rgb(211, 211, 211);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input[type="text"], input[type="email"]{
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.808);
+    font-size: 20px;
+    color: #212121;
+    background: rgb(211, 211, 211);
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: 0;
+    border-bottom: 1px solid #0387d1;
+}
+input[type="submit"]{
+width: 140px;
+border-radius: 10px;
+background: rgb(52, 161, 250);
+padding: 20px 0;
+font-size: 16px;
+color: white;
+box-shadow: 1px 2px 2px 0px rgb(36, 35, 35);
+border: 0;
+display: inline-block;
+cursor: pointer;
+transition: .5s;
+margin: auto;
+ 
+}
+
+input[type="submit"]:hover {
+    background: #6672e0;
+    transition: .5s;
+}
+.success {
+color: white;
+background: rgb(47, 145, 86);
+padding:  15px 50px;
+margin-bottom: 25px;
+position: fixed;
+top: 90%;
+right: 100px;
+display: none;
+}
+.contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.contacto-info i {
+    vertical-align: middle;
+    margin-right: 15px;
+    color: #0387d1;
 }
