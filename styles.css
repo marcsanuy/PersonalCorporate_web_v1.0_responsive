@@ -8,8 +8,10 @@ body {
 .logo {
     float: left;
     position: relative;
-    margin-left: 50px;
     padding-top: 1%;
+}
+nav{
+    margin-top: 2%;
 }
 
 .contenedor {
@@ -30,7 +32,7 @@ header {
 
 #contenedor-menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 header .logo {
@@ -56,8 +58,7 @@ nav ul li {
 .contenedor-titulo {
     display: flex;
     justify-content: center;
-    margin: 27vh 0;
-}
+    }
 
 .contenedor-titulo h1 {
     font-size: 65px;
