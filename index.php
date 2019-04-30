@@ -20,11 +20,11 @@
 
     <header>
 
-        
+
 
         <div class="contenedor" id="contenedor-menu">
-                <img class="logo" src="images/logo/MS.png" alt="logo">
-            
+            <img class="logo" src="images/logo/MS.png" alt="logo">
+
             <nav>
                 <ul>
                     <li>Sobre mi</li>
@@ -205,7 +205,16 @@
         </section>
 
         <section id="contacto">
+            
+            <?php
+                if(@$_GET['i']=='ok') { ?>
 
+                    <h3> La consulta se ha enviado, nos podremos en contacto con usted. Gracias</h3>
+
+                    
+            <?php        
+            } else{
+            ?>
 
             <div class="contenedor">
                 <h3>Contacto</h3>
@@ -218,11 +227,13 @@
 
                     <textarea placeholder="Mensaje" name="consulta" id="itAsunto" class="message"></textarea>
 
-                    <div id="mensaje4" class="success"> <i class="far fa-check-circle fa-2x"></i> La consulta se envió
-                        con éxito, nos pondremos en contacto con usted. Gracias.</div>
+                    <div id="mensaje4" class="success"> <i class="far fa-check-circle fa-2x"></i> Mensaje enviado.</div>
 
                     <input type="submit" id="bEnviar" value="ENVIAR">
                 </form>
+
+            <?php } ?>
+
             </div>
 
             <div class="contacto-info">
@@ -294,6 +305,42 @@
 
         })
     </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#bEnviar').click(function () {
+                var nombre = $('#itNombre').val();
+                var correo = $('#itMail').val();
+                var asunto = $('#itAsunto').val();
+
+
+                if (nombre == "") {
+                    $('#itNombre').css('border-bottom', '2px solid red');
+                    return false;
+                } else {
+                    $('#itNombre').css('border-bottom', '1px solid #90CAF9');
+
+                    if (correo == "") {
+                        $('#itMail').css('border-bottom', '2px solid red');
+                        return false;
+                    } else {
+                        $('#itMail').css('border-bottom', '1px solid #90CAF9');
+
+                        if (asunto == "") {
+                            $('#itAsunto').css('border-bottom', '2px solid red');
+                            return false;
+                        }
+                    }
+                    $('#bEnviar').fadeOut();
+                    $('#mensaje4').fadeIn();
+                }
+
+            })
+
+        })
+    </script>
+
+
 </body>
 
 </html>
