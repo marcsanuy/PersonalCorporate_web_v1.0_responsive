@@ -92,9 +92,9 @@ nav ul li {
 }
 
 #about img {
-    width: 800px;
-    height: 600px;
-    margin-right: 100px;
+    width: 80%;
+    height: 100%;
+    
 }
 
 #about .contenido {
@@ -103,7 +103,7 @@ nav ul li {
 }
 
 #about .about-text {
-    width: 35%;
+    width: 100%;
 }
 
 #about a {
@@ -156,6 +156,7 @@ nav ul li {
 .contenedor-servicios p {
     margin-bottom: 20px;
     height: 200px;
+    margin-left: 25px;
 }
 
 .contenedor-servicios .icono {
