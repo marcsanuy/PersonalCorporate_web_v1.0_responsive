@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+    <div class="fakeLoader"></div>
     <header>
         <div class="menu">
         <div class="contenedor" id="contenedor-menu">
@@ -28,15 +28,15 @@
 
             <nav>
                 <ul>
-                    <li>Sobre mi</li>
-                    <li>Servicios</li>
-                    <li>Portfolio</li>
-                    <li>Por que trabajar conmigo</li>
-                    <li>Contacto</li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#trabajos">Portfolio</a></li>
+                    <li><a href="#trabajar-conmigo">Por que trabajar conmigo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+        </div>
         <div class="contenedor">
             <div class="contenedor-titulo">
                 <div class="titulo wow bounceOut">
@@ -219,7 +219,7 @@
 
             <?php        
             } else{
-            ?> -->
+            <!-- ?> -->
            
 
             <div class="contenedor">
@@ -238,7 +238,7 @@
                     <input type="submit" id="bEnviar" value="ENVIAR">
                 </form>
 
-                <?php } ?>
+                <!-- <?php } ?> -->
 
             </div>
 
@@ -371,6 +371,20 @@
               <script>
               new WOW().init();
               </script>
+
+    <script src="js/fakeLoader.min.js" >
+
+        $(document).ready(function(){
+            $(".fakeloader").fakeLoader({
+                timeToHide:2200,
+                bdColor:"#42425a",
+                spinner:"spinner4"
+            });
+        });
+    
+    
+    </script>   
+
 
 </body>
 
