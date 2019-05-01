@@ -1,3 +1,5 @@
+<!-- html extension will change to php when the site are running in a hosting -->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,6 +14,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="owl carrusel/owl.carousel.min.css">
     <link rel="stylesheet" href="owl carrusel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="wow/animate.css">
     <link rel="shortcut icon" href="images/logo/icon2.png">
     <title>Marc Sanuy Design</title>
 </head>
@@ -19,9 +22,7 @@
 <body>
 
     <header>
-
-
-
+        <div class="menu">
         <div class="contenedor" id="contenedor-menu">
             <img class="logo" src="images/logo/MS.png" alt="logo">
 
@@ -35,9 +36,10 @@
                 </ul>
             </nav>
         </div>
+    </div>
         <div class="contenedor">
             <div class="contenedor-titulo">
-                <div class="titulo">
+                <div class="titulo wow bounceOut">
                     <h1>MARC SANUY</h1>
                     <h2>Diseñador & Desarrollador Web</h2>
                     <a>PORTFOLIO</a>
@@ -52,8 +54,8 @@
             <div class="contenedor">
                 <h3>Sobre mi</h3>
                 <div class="contenido">
-                    <div class="about-img"><img src="images/teclado.jpeg" alt=""></div>
-                    <div class="about-text">
+                    <div class="about-img wow bounceInLeft"><img src="images/teclado.jpeg" alt=""></div>
+                    <div class="about-text wow bounceInRight" data-wow-delay="1s">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod et risus ac
                             tristique.
                             Phasellus tempus vulputate dolor ac sollicitudin. Cras eros enim, suscipit vel feugiat quis,
@@ -77,7 +79,7 @@
         <section id="servicios">
             <div class="contenedor">
                 <h3>Servicios</h3>
-                <div class="contenedor-servicios">
+                <div class="contenedor-servicios wow bounceIn"data-wow-delay="1s">
                     <div class="servicio color2">
                         <h4>Diseño Web</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod et risus ac
@@ -157,7 +159,7 @@
         <section id="trabajar-conmigo">
             <div class="contenedor">
                 <h3>Desarrollo de Confianza</h3>
-                <div class="contenedor-trabajar">
+                <div class="contenedor-trabajar wow wobble" data-wow-delay="1s">
                     <div class="item">
                         <ul>
                             <li><i class="fas fa-tachometer-alt fa-3x"></i></li>
@@ -205,17 +207,20 @@
         </section>
 
         <section id="contacto">
-            
-            <?php
+
+             <!-- this will be actived in the final update -->
+            <!-- <?php
                 if(@$_GET['i']=='ok') { ?>
 
-                    <!-- <h3> La consulta se ha enviado, nos podremos en contacto con usted. Gracias</h3> -->
-                    <!-- remove comments when the site are running in a hosting -->
+            <h3> La consulta se ha enviado, nos podremos en contacto con usted. Gracias</h3>
 
-                    
+           
+
+
             <?php        
             } else{
-            ?>
+            ?> -->
+           
 
             <div class="contenedor">
                 <h3>Contacto</h3>
@@ -233,7 +238,7 @@
                     <input type="submit" id="bEnviar" value="ENVIAR">
                 </form>
 
-            <?php } ?>
+                <?php } ?>
 
             </div>
 
@@ -244,6 +249,26 @@
         </section>
 
     </main>
+
+    <footer>
+        <section id="socialmedia">
+            <div class="contenedor">
+                <div class="redes">
+                    <a href="https://github.com/marcsanuy">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/marc-sanuy/">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                </div>
+                <div class="parrafo">
+                        <p>© Marc Sanuy Design  |  Web Developer</p>
+                </div>
+            </div>
+            
+        </section>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script>
@@ -340,7 +365,12 @@
 
         })
     </script>
-
+    <script src="js/script.js"></script>
+    
+    <script src="wow/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
 </body>
 

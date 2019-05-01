@@ -23,6 +23,7 @@ nav{
 }
 
 
+
 header {
     height: 100vh;
     background: linear-gradient(rgba(56, 55, 55, 0.986), rgba(73, 113, 153, 0.644)), url(images/445785133a769a6.jpg) right no-repeat;
@@ -59,6 +60,7 @@ nav ul li {
 .contenedor-titulo {
     display: flex;
     justify-content: center;
+    margin-top: 15%;
     }
 
 .contenedor-titulo h1 {
@@ -390,4 +392,32 @@ display: none;
     vertical-align: middle;
     margin-right: 15px;
     color: #0387d1;
+    margin-bottom: 20px;
+}
+footer{
+    background: #32323f;
+    padding: 0;
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer i{
+    margin: 0 50px;
+    transform: rotate(0);
+    transition: .6s;
+    text-decoration: none;
+    color: #0387d1;;
+}
+footer i:hover{
+    transform: rotate(360deg);
+    color: white;
+    transition:  .6s;
+}
+footer p{
+    color: white;
+    margin-top: 40px;   
 }
