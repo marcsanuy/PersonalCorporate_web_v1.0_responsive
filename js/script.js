@@ -18,6 +18,27 @@
                  
              }
          }
+
+         if ($(window).width() < 480) {
+            if (scroll > 100) {
+                 $(".menu").css({"background":"#737373"});
+                 $(".menu").css({"padding":"5px 0"});
+                 $(".menu").addClass("shadow");
+                 
+            } else {
+                $(".menu").css({"background":"transparent"});
+                $(".menu").css({"padding":"20px 0"});
+                 $(".menu").removeClass("shadow");
+                 
+             }
+         }
      })
+
+
+   if ($(window).width() < 500) {
+       $('.menu-icon').on('click', function() {
+         $('nav').slideToggle();  
+       })
+   } 
 
  })

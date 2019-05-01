@@ -74,7 +74,9 @@ header {
 header .logo {
     color: white;
     font-size: 31px;
-
+}
+.menu-icon{
+    display: none;
 }
 
 nav ul {
@@ -495,5 +497,38 @@ footer p{
     width: 100%;
     margin-bottom: 60px;
 }
+#contacto .form {
+    flex-direction: column;
+    width: 100%;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+.contacto-info{
+   flex-direction: column;
+   margin-left: 10%;
+}
 
+.menu-icon{
+    display: block;
+    float: right;
+    padding-bottom: 20px;
+    margin-top: 17px;
+}
+header nav {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    height: 280px;
+    margin-top: 35px;
+    background: rgba(56, 55, 55);
+    width: 100%;
+    display: none;
+}
+header nav ul {
+    flex-direction: column;
+}
+header nav ul li {
+    margin-bottom: 20px;
+}
 }
