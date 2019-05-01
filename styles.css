@@ -15,11 +15,10 @@ html {
     bottom:0;
     right:0; 
     text-decoration: none;
-    color: rgb(102, 71, 128); 
+    color: rgb(44, 33, 56); 
+    z-index: 11;
 }
-.up:hover{
 
-}
 
 .logo {
     float: left;
@@ -462,4 +461,39 @@ footer i:hover{
 footer p{
     color: white;
     margin-top: 40px;   
+}
+
+@media screen and (max-width: 800px) {
+
+.titulo h1{
+    font-size: 40px;
+}
+.titulo h2{
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+#about .contenido{
+    flex-direction: column;
+}
+#about img{
+    width: 100%;
+}
+#about .about-text {
+    width: 100%;
+}
+.contenedor-servicios{
+    flex-direction: column;
+    
+}
+.contenedor-servicios .servicio{
+    width: 90%;    
+}
+#trabajar-conmigo .contenedor-trabajar{
+    flex-direction: column;
+}
+#trabajar-conmigo .item{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
 }
