@@ -23,26 +23,26 @@
     <div class="fakeLoader"></div>
     <header>
         <div class="menu">
-        <div class="contenedor" id="contenedor-menu">
-            <img class="logo" src="images/logo/MS.png" alt="logo">
+            <div class="contenedor" id="contenedor-menu" id="top">
+                <img class="logo" src="images/logo/MS.png" alt="logo">
 
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre mi</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#trabajos">Portfolio</a></li>
-                    <li><a href="#trabajar-conmigo">Por que trabajar conmigo</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre mi</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#trabajos">Portfolio</a></li>
+                        <li><a href="#trabajar-conmigo">Por que trabajar conmigo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-titulo">
                 <div class="titulo wow bounceOut">
                     <h1>MARC SANUY</h1>
                     <h2>Diseñador & Desarrollador Web</h2>
-                    <a>PORTFOLIO</a>
+                    <a href="#trabajos">PORTFOLIO</a>
                 </div>
             </div>
         </div>
@@ -50,6 +50,12 @@
     </header>
 
     <main>
+            <section >
+                <div>
+                <a class="up" href="#top"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
+                </div>
+            </section>
+
         <section id="about">
             <div class="contenedor">
                 <h3>Sobre mi</h3>
@@ -70,7 +76,7 @@
                             sed cursus est.</p>
                         <p> Quisque vitae sodales elit, in ullamcorper augue. Etiam feugiat felis nisl, id
                             dapibus neque pellentesque nec.</p>
-                        <a>VER MIS TRABAJOS</a>
+                        <a href="#trabajos">VER MIS TRABAJOS</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +85,7 @@
         <section id="servicios">
             <div class="contenedor">
                 <h3>Servicios</h3>
-                <div class="contenedor-servicios wow bounceIn"data-wow-delay="1s">
+                <div class="contenedor-servicios wow bounceIn" data-wow-delay="1s">
                     <div class="servicio color2">
                         <h4>Diseño Web</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod et risus ac
@@ -203,12 +209,12 @@
         </section>
         <section id="cta">
             <h3>Estás a un paso de tener tu página web</h3>
-            <a href="">SABER MAS</a>
+            <a href="#contacto">SABER MAS</a>
         </section>
 
         <section id="contacto">
 
-             <!-- this will be actived in the final update -->
+            <!-- this will be actived in the final update -->
             <!-- <?php
                 if(@$_GET['i']=='ok') { ?>
 
@@ -220,7 +226,7 @@
             <?php        
             } else{
             <!-- ?> -->
-           
+
 
             <div class="contenedor">
                 <h3>Contacto</h3>
@@ -263,14 +269,15 @@
                     </a>
                 </div>
                 <div class="parrafo">
-                        <p>© Marc Sanuy Design  |  Web Developer</p>
+                    <p>© Marc Sanuy Design | Web Developer</p>
                 </div>
             </div>
-            
+
         </section>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+
     </script>
     <script src="owl carrusel/owl.carousel.min.js"></script>
     <script>
@@ -366,24 +373,21 @@
         })
     </script>
     <script src="js/script.js"></script>
-    
+
     <script src="wow/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <script>
+        new WOW().init();
+    </script>
 
-    <script src="js/fakeLoader.min.js" >
-
-        $(document).ready(function(){
+    <script src="js/fakeLoader.min.js">
+        $(document).ready(function () {
             $(".fakeloader").fakeLoader({
-                timeToHide:2200,
-                bdColor:"#42425a",
-                spinner:"spinner4"
+                timeToHide: 2200,
+                bdColor: "#42425a",
+                spinner: "spinner4"
             });
         });
-    
-    
-    </script>   
+    </script>
 
 
 </body>
