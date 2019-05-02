@@ -467,12 +467,9 @@ footer p{
 
 @media screen and (max-width: 800px) {
 
-#contenedor-menu {
-    display: flex;
-        
-    }
-
-    header .logo {
+ 
+    
+header .logo {
     transform: scale(0.5);
 }
 .menu{
@@ -550,9 +547,8 @@ input[type="text"], input[type="email"] {
 
 .menu-icon{
     display: block;
-    margin-right: auto;
-    transform: scale(0.7);
-    
+    transform: scale(0.6);
+        
 }
 header nav {
     position: absolute;
