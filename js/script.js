@@ -20,7 +20,7 @@
          }
 
          if ($(window).width() < 480) {
-            if (scroll > 100) {
+            if (scroll > 70) {
                  $(".menu").css({"background":"#737373"});
                  $(".menu").css({"padding":"5px 0"});
                  $(".menu").addClass("shadow");
@@ -35,7 +35,7 @@
      })
 
 
-   if ($(window).width() < 500) {
+   if ($(window).width() < 480) {
        $('.menu-icon').on('click', function() {
          $('nav').slideToggle();  
        })
