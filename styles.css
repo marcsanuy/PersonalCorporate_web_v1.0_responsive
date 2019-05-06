@@ -467,12 +467,48 @@ footer p{
 
 @media screen and (max-width: 800px) {
 
+ 
+    
+header .logo {
+    transform: scale(0.5);
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    transition: .5s;
+    z-index: 10;
+}
+    
 .titulo h1{
     font-size: 40px;
 }
 .titulo h2{
     margin-bottom: 50px;
     font-size: 15px;
+}
+#about h3 {
+    text-align: center;
+    font-size: 30px;
+}
+#servicios h3 {
+    text-align: center;
+    font-size: 30px;
+}
+#trabajos h3{
+    text-align: center;
+    font-size: 30px;
+}
+#trabajar-conmigo h3 {
+    font-size: 30px;
+    text-align: center;
+}
+#contacto h3 {
+    font-size: 30px;
+    text-align: center;
+}
+.contenedor-servicios h4 {
+    font-size: 25px;
 }
 #about .contenido{
     flex-direction: column;
@@ -511,13 +547,12 @@ input[type="text"], input[type="email"] {
 
 .menu-icon{
     display: block;
-    float: left;
-    padding-bottom: 20px;
-    margin-top: 17px;
+    transform: scale(0.6);
+        
 }
 header nav {
     position: absolute;
-    top: 110px;
+    top: 85px;
     left: 0;
     height: 280px;
     margin-top: 35px;
