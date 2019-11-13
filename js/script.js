@@ -36,7 +36,7 @@
 
 
    if ($(window).width() < 480) {
-       $('.menu-icon').on('click', function() {
+       $('.menu').on('click', function() {
          $('nav').slideToggle();  
        })
    } 
